@@ -1,0 +1,49 @@
+@import 'colors.scss';
+$font-family:sans-serif;
+
+* {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0.25em;
+}
+
+html {
+  color: $sol6;
+  display: table;
+  font-family: $font-family;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  background-color: $sol1;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 2em auto;
+}
+
+h1 {
+  color: $sol3;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+p {
+  margin: 0 auto;
+  width: 280px;
+}
+
+@media only screen and (max-width: 280px) {
+
+  body,
+  p {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin: 0 0 0.3em;
+  }
+
+}
